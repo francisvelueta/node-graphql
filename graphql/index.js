@@ -1,10 +1,10 @@
 const graphHttp = require('express-graphql');
-const schemaUser = require('./schema/user');
-const valueUser = require('./resolvers/user');
+const schemaEvent = require('./schema/event');
+const valueEvent = require('./resolvers/event');
 
 module.exports = graphHttp({
-    schema: schemaUser,
-    rootValue: valueUser,
+    schema:  schemaEvent ,
+    rootValue: valueEvent,
     graphiql: true
 });
 
